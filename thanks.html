@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- To tell the browser to size the page to the device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You!</title>
+  <style>
+    /* Full-screen blue, flexible padding */
+    body {
+      background-color: #add8e6;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;           /* space from the edges */
+      font-family: sans-serif;
+    }
+
+    /* To constrain my content so it’s never too wide */
+    .container {
+      background: white;       /* to give a card look */
+      border-radius: 8px;
+      padding: 2rem;
+      max-width: 500px;        /* never wider than 500px */
+      width: 100%;             /* but shrink down on small screens */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* Scalable typography */
+    h1 {
+      font-size: 1.8rem;       /* ~28px on desktop, scales down on small */
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    p {
+      font-size: 1rem;         /* ~16px base */
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* A quick media-query tweak (if you want even bigger text on large screens) */
+    @media (min-width: 768px) {
+      h1 { font-size: 2.2rem; } /* ~35px on tablets+ */
+      p  { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank you for this message!</h1>
+    <p>I will be in touch as soon as possible!</p>
+    <p><a href="index.html">← Back to home</a></p>
+  </div>
+</body>
+</html>
+
+

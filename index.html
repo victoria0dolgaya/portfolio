@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Victoria's Portfolio - Front-End Developer showcasing responsive web projects.">
+  <title>Viktoriia's Portfolio</title>
+  <link rel="shortcut icon" href="images\cv_icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="#home" class="logo">Viktoriia Dolha</a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="text-card">
+          <h1>Hello! I'm Viktoriia</h1>
+          <p>I am deeply interested in Front-End development and look forward to bringing ideas to life through accessible, responsive websites and web applications. Every day I learn, grow and am ready to take on new challenges in technology with curiosity and determination!</p>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images\1.jpg" alt="Portrait of Viktoriia">
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="text-card">
+        <p>Hi! I’m Viktoriia, a Front-End enthusiast based just outside London.<br>
+            Currently, I’m studying Software Engineering at university and focusing on learning how to build responsive, accessible websites - <br>
+            and I`m eager to expand into Full-Stack development down the road. <br>
+            <br>
+            Alongside HTML, CSS, and JavaScript, I’m also exploring web design, diving into how users interact with digital content. <br>
+            Outside of tech, you`ll usually find me with my nose in a book, hunting for something new to learn or planning my future travel adventure. <br> 
+            <br>
+            I’m always driven to grow my skill set and I`m open to opportunities like internships or apprenticeships where I can turn theory into real-world experience while expanding from Front-End into Full-Stack</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+
+        <!-- First project -->
+        <article class="project-card">
+          <a href="https://victoria0dolgaya.github.io/OM_marketing/"><img src="images/p1.jpg" alt="Project 1"></a>
+          <h3>O...Marketing</h3>
+          <p>(Click on the picture to view) <br>
+            <br>
+            A responsive, single-page landing site for a digital marketing agency with a filterable portfolio, animated logo slider and smooth-scroll navigation.</p>
+            <br>
+            <p>Built with semantic HTML5, vanilla CSS (mobile-first media queries),
+               jQuery for smooth-scroll & menu toggle, 
+               Slick Carousel for the blog slider, 
+               MixItUp for portfolio filters and 
+               Fancybox for the lightbox video.</p>
+            <br>
+          <a href="https://github.com/victoria0dolgaya/OM_marketing.git" class="btn-link" target="_blank" rel="noopener">View Repository</a>
+        </article>
+
+        <!-- Second project -->
+         <article class="project-card">
+          <a href="https://victoria0dolgaya.github.io/bookshop-website/"><img src="images/p2.jpg" alt="Project 2"></a>
+          <h3>BookVerse Club</h3>
+          <p>(Click on the picture to view) <br>
+            <br>
+            A single-page book-rental landing site that lets readers quickly browse and filter a curated catalog, place a rental order, and pick a subscription plan—all in just a few clicks.</p>
+            <br>
+            <p>
+              Built with semantic HTML5, vanilla CSS (mobile-first with Flexbox and column-count grid), 
+              jQuery for smooth-scroll & mobile menu toggle, 
+              MixItUp for catalog filtering and 
+              Slick Carousel for touch-friendly sliders. 
+              Design drafted in Figma.
+            </p>
+            <br>
+          <a href="https://github.com/victoria0dolgaya/bookshop-website.git" class="btn-link" target="_blank" rel="noopener">View Repository</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+
+  <form
+    action="https://formsubmit.co/vickydolha@gmail.com"
+    method="POST"
+  >
+    
+    <input type="hidden" name="_captcha" value="false">
+    
+    <input type="hidden" name="_subject" value="New message from my CV site">
+    
+    <input type="hidden" name="_next" value="https://vickydolha.github.io/thank-you.html">
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    >
+
+    <textarea
+      name="message"
+      placeholder="You can send me a message through this form, i will see it via mail and contact you later!"
+      rows="4"
+      required
+    ></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+
+    <footer class="footer">
+      <div class="footer-copy">
+        <p>@2025 Viktoriia Dolha</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js\main.js"></script>  
+</body>
+</html>
+
