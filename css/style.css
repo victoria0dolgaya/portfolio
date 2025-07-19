@@ -168,10 +168,9 @@ body {
 .projects .project-grid {
   display: grid;
   gap: 2rem;
-  /* force columns no smaller than 300px, but expand to fill up to 1fr each */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* add these two lines: */
-  max-width: 1000px;   /* or whatever max you like */
+  /* to force columns no smaller than 300px, but to expand to fill up to 1fr each */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 1000px;   
   margin: 0 auto;      /* centers the grid in its section */
 }
 
