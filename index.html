@@ -29,7 +29,7 @@
     <section id="home" class="hero">
       <div class="hero-content">
         <div class="text-card">
-          <h1>Hello! I'm Viktoriia</h1>
+          <h1><span class="typed" data-typed-items="Hello! I'm Viktoriia"></span></h1>
           <p>I am deeply interested in Front-End development and look forward to bringing ideas to life through accessible, responsive websites and web applications. Every day I learn, grow and am ready to take on new challenges in technology with curiosity and determination!</p>
           <a href="#contact" class="btn">Get in Touch</a>
         </div>
@@ -209,7 +209,7 @@
 
     <textarea
       name="message"
-      placeholder="You can send me a message through this form, i will see it via mail and contact you later!"
+      placeholder="You can send me a message through this form, I will see it via mail and contact you as soon as possible!"
       rows="4"
       required
     ></textarea>
@@ -227,6 +227,30 @@
   </main>
 
   <script src="js\main.js"></script>  
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.querySelector('.typed');
+  if (!el) return;
+
+  const strings = (el.dataset.typedItems || '')
+    .split(',')
+    .map(s => s.trim())
+    .filter(Boolean);
+
+  new Typed('.typed', {
+    strings,
+    typeSpeed: 70,
+    backSpeed: 40,
+    backDelay: 1100,
+    loop: true,
+    smartBackspace: true,
+    showCursor: true,
+    cursorChar: '|'
+  });
+});
+</script>
 </body>
 </html>
 
