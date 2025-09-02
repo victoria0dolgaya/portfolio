@@ -138,8 +138,29 @@ body {
   transition: background var(--transition);
 }
 
+.btn-group {
+  display: flex;
+  gap: 10px; /* space between buttons */
+  flex-wrap: wrap; /* so they stack nicely on small screens */
+}
+
+.btn + .btn {
+  margin-left: 10px; /* space between buttons (desktop) */
+}
+
 .btn:hover {
   background: #0b5076;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.8);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: #ffffff;
 }
 
 .hero-image img {
@@ -300,6 +321,10 @@ body {
     height: auto;
     object-fit: cover;
   }
+
+  .btn + .btn {
+    margin-left: 0px; 
+}
 }
 
 
