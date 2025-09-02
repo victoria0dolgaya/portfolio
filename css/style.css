@@ -174,11 +174,27 @@ body {
   margin: 0 auto;      /* centers the grid in its section */
 }
 
+.skills
+.skills-grid {
+  display: grid;
+  gap: 2rem;
+  /* to force columns no smaller than 300px, but to expand to fill up to 1fr each */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;   
+  margin: 0 auto;      /* centers the grid in its section */
+}
+
 .project-card {
   background: var(--light);
   border-radius: var(--radius);
   padding: 1rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform var(--transition);
+}
+
+.skills-card {
+  background: var(--accent);
+  padding: 1rem;
   transition: transform var(--transition);
 }
 
@@ -188,6 +204,12 @@ body {
 
 .project-card img {
   width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+}
+
+.skills-card img {
+  max-height: 100px;
   border-radius: var(--radius);
   margin-bottom: 0.75rem;
 }
