@@ -261,17 +261,23 @@ body {
 @media (max-width: 768px) {
   .hero { flex-direction: column; }
   .hero-image { margin-top: 2rem; }
+
   .nav-links {
     position: fixed;
     top: 60px;
-    right: 0;
+    right: 10px; /* small gap from right edge */
     background: var(--light);
     flex-direction: column;
     width: 200px;
     padding: 1rem;
-    transform: translateX(100%);
+    transform: translateX(120%);
     transition: transform var(--transition);
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    border-radius: var(--radius); /* round corners */
+  }
+
+  .nav-links li {
+    margin: 0.6rem 0; /* gap between items */
   }
 
   .nav-links.open {
@@ -295,8 +301,6 @@ body {
     object-fit: cover;
   }
 }
-
-
 
 
 
